@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        {{!-- rending partials --}}
+        {{>header}}
+        <div class="form">
+            <form>
+                <div id="container">
+                    <div id="logo">
+                        <p>Address<span>Search</span></p>
+                    </div>
+                    <div id="continput">
+                        <div id="input-group">
+                            <input type="text" id="searchtext">
+                            <button id="icon-src"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div id="header"></div>
+                    <div id="results">
+                        <p class="message1"></p>
+                        <br>
+                        <p class="message4"></p>
+                        <br>
+                        <p class="message3"></p>
+                        <br>
+                        <p class="message2"></p>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="svg-container">
+        <!-- I crated SVG with: https://codepen.io/anthonydugois/pen/mewdyZ -->
+        <svg viewbox="0 0 800 400" class="svg">
+            <path id="curve" fill="#50c6d8" d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+            </path>
+        </svg>
+    </div>
+
+    {{>footer}}
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+<script src="./js/app.js"></script>
+
+</html>
